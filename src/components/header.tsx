@@ -32,14 +32,14 @@ export const Header = () => {
           Say hi at{" "}
           <Link
             className="font-medium text-default underline underline-offset-2 decoration-subdued/20 hover:decoration-default transition-colors duration-300 ease-out whitespace-nowrap"
-            href={""}
+            href={"https://x.com/yushankkk"}
           >
             @yushankkk{" "}
           </Link>{" "}
           or{" "}
           <Link
             className="font-medium text-default underline underline-offset-2 decoration-subdued/20 hover:decoration-default transition-colors duration-300 ease-out whitespace-nowrap"
-            href={""}
+            href={"mailto:yushank.dev@gmail.com"}
           >
             yushank.dev@example.com
           </Link>
