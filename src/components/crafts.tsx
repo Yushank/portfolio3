@@ -4,9 +4,9 @@ import React from "react";
 export const Crafts = () => {
   return (
     <div>
-      <div className="mt-10 px-4">
+      <div className="px-4">
         <div className="text-md leading-snug text-subdued">Crafts</div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-2 py-10 max-w-full mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-2 mt-4 max-w-full mx-auto">
           <CraftCard
             url={""}
             webm={
@@ -43,6 +43,14 @@ export const Crafts = () => {
               "https://pub-2409b35ccccb4526b9cb804582912d43.r2.dev/portfolio-videos/slider-cost-card-v.3.mp4"
             }
           />
+        </div>
+        <div className="flex items-center justify-end mt-4">
+          <Link
+            className="text-md text-subdued hover:text-default cursor-pointer"
+            href={""}
+          >
+            See more
+          </Link>
         </div>
       </div>
     </div>
