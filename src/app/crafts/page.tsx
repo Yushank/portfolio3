@@ -12,7 +12,7 @@ export default function CraftsPage() {
         </Container>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-2 mt-4 max-w-full">
           <CraftCard
-            url={""}
+            url={"/crafts/model-card"}
             webm={
               "https://pub-2409b35ccccb4526b9cb804582912d43.r2.dev/portfolio-videos/model-in-card-v.2.webm"
             }
@@ -21,7 +21,7 @@ export default function CraftsPage() {
             }
           />
           <CraftCard
-            url={""}
+            url={"/crafts/dynamic-nav"}
             webm={
               "https://pub-2409b35ccccb4526b9cb804582912d43.r2.dev/portfolio-videos/navbar-motion-2.webm"
             }
@@ -30,7 +30,7 @@ export default function CraftsPage() {
             }
           />
           <CraftCard
-            url={""}
+            url={"/crafts/parallax-card"}
             webm={
               "https://pub-2409b35ccccb4526b9cb804582912d43.r2.dev/portfolio-videos/hover-card-v.7.webm"
             }
@@ -39,7 +39,7 @@ export default function CraftsPage() {
             }
           />
           <CraftCard
-            url={""}
+            url={"/crafts/slider-card"}
             webm={
               "https://pub-2409b35ccccb4526b9cb804582912d43.r2.dev/portfolio-videos/slider-cost-card-v.3.webm"
             }
