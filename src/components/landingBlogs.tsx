@@ -1,7 +1,7 @@
 import { getAllBlogs } from "@/utils/mdx";
 import Link from "next/link";
 import React from "react";
-import BlogIcon from "./icons/general";
+import { BlogIcon } from "./icons/general";
 
 export const LandingBlogs = async () => {
   const allBlogs = await getAllBlogs();

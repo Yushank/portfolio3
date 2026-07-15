@@ -1,5 +1,5 @@
 import Container from "@/components/container";
-import { Crafts } from "@/components/crafts";
+import { Crafts } from "@/components/landingCrafts";
 import { Footer } from "@/components/footer";
 import { Header } from "@/components/header";
 import { LandingBlogs } from "@/components/landingBlogs";

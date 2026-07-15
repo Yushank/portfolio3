@@ -1,5 +1,6 @@
 import Container from "@/components/container";
-import BlogIcon from "@/components/icons/general";
+import { BlogIcon, HomeIcon } from "@/components/icons/general";
+import { DottedSeparator } from "@/components/separator";
 import { getAllBlogs } from "@/utils/mdx";
 import { Metadata } from "next";
 import Link from "next/link";
@@ -19,7 +20,14 @@ export default async function BlogsPage() {
     <div>
       <Container>
         <div className="px-4 mt-10">
-          <div className="text-md leading-snug text-subdued">Blogs</div>
+          <div className="flex items-center justify-start pt-4 pb-10">
+            <Link className="py-2 flex gap-2 cursor-pointer" href={"/"}>
+              <HomeIcon className="h-5 w-5 text-subdued" />
+              <p className="text-subdued/90 text-sm">Back Home</p>
+            </Link>
+          </div>
+          <p className="text-md text-subdued py-4">Some writings</p>
+          <DottedSeparator />
           <div className="mt-4">
             {allBlogs.map((blog, idx) => (
               <Link

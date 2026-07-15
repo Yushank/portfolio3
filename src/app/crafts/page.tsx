@@ -1,4 +1,5 @@
 import Container from "@/components/container";
+import { HomeIcon } from "@/components/icons/general";
 import { DottedSeparator } from "@/components/separator";
 import Link from "next/link";
 
@@ -7,10 +8,16 @@ export default function CraftsPage() {
     <div>
       <div className="px-4">
         <Container className="flex-col items-center mt-10 mb-10">
+          <div className="flex items-center justify-start pt-4 pb-10">
+            <Link className="py-2 flex gap-2 cursor-pointer" href={"/"}>
+              <HomeIcon className="h-5 w-5 text-subdued" />
+              <p className="text-subdued/90 text-sm">Back Home</p>
+            </Link>
+          </div>
           <p className="text-md text-subdued py-4">Some code snippets</p>
           <DottedSeparator />
         </Container>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-2 mt-4 max-w-full">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-2 mt-4 mb-4 max-w-full">
           <CraftCard
             url={"/crafts/model-card"}
             webm={
