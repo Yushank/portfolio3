@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import { ArrowUprightIcon } from "./icons/general";
 
 export const Header = () => {
   return (
@@ -30,19 +31,24 @@ export const Header = () => {
         </p>
         <p className="mt-5 mb-6 text-subdued">
           Say hi at{" "}
-          <Link
-            className="font-medium text-default underline underline-offset-2 decoration-subdued/20 hover:decoration-default transition-colors duration-300 ease-out whitespace-nowrap"
-            href={"https://x.com/yushankkk"}
-          >
-            @yushankkk{" "}
-          </Link>{" "}
+          <span>
+            <Link
+              className="font-medium text-default underline underline-offset-2 decoration-subdued/20 hover:decoration-default transition-colors duration-300 ease-out whitespace-nowrap"
+              href={"https://x.com/yushankkk"}
+            >
+              @yushankkk{" "}
+            </Link>
+          </span>{" "}
           or{" "}
-          <Link
-            className="font-medium text-default underline underline-offset-2 decoration-subdued/20 hover:decoration-default transition-colors duration-300 ease-out whitespace-nowrap"
-            href={"mailto:yushank.dev@gmail.com"}
-          >
-            yushank.dev@example.com
-          </Link>
+          <span>
+            <Link
+              className="group font-medium text-default underline underline-offset-2 decoration-subdued/20 hover:decoration-default transition-colors duration-300 ease-out whitespace-nowrap relative"
+              href={"mailto:yushank.dev@gmail.com"}
+            >
+              yushank.dev@gmail.com
+              <ArrowUprightIcon className="absolute bottom-0.5 right-6 w-4 h-4 text-subdued translate-x-full opacity-0 blur-sm transition-all duration-300 ease-out group-hover:translate-x-12 group-hover:opacity-100 group-hover:blur-none" />
+            </Link>
+          </span>
           .
         </p>
       </div>
