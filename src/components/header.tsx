@@ -1,6 +1,6 @@
 import Link from "next/link";
 import React from "react";
-import { ArrowUprightIcon, TwitterIcon } from "./icons/general";
+import { MailIcon, TwitterIcon } from "./icons/general";
 
 export const Header = () => {
   return (
@@ -44,7 +44,7 @@ export const Header = () => {
             href={"mailto:yushank.dev@gmail.com"}
           >
             yushank.dev@gmail.com
-            <ArrowUprightIcon className="absolute bottom-0.5 right-6 w-4 h-4 text-subdued translate-x-full opacity-0 blur-sm transition-all duration-300 ease-out group-hover:translate-x-12 group-hover:opacity-100 group-hover:blur-none" />
+            <MailIcon className="absolute bottom-0.5 right-6 w-4 h-4 text-subdued translate-x-full opacity-0 blur-sm transition-all duration-300 ease-out group-hover:translate-x-12 group-hover:opacity-100 group-hover:blur-none" />
           </Link>
           .
         </p>
